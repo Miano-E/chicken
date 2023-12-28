@@ -1,0 +1,82 @@
+* {
+    font-family: 'Poppins';
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h3{
+	text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+    margin: .5em;
+}
+
+.login_container{
+    font-family: 'Poppins';
+	font-size: 1.4rem;
+	max-width: 365px;
+	padding: 12px 16px;
+	margin-top: 8em;
+	background-color: #d8dbe2;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+form label{
+    font-weight: normal;
+    font-family: 'Poppins';
+	margin-top: 15px;
+	display: flex;
+}
+
+
+input[type="text"],
+input[type="password"]{
+	width: 100%;
+	margin: 8px 0;
+	font-size: 14px;
+	padding: 10px 10px;
+    border-radius: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+    border: 1px solid #000; 
+	
+}
+
+.check{
+	margin-left: 55px;
+}
+
+.check a {
+	color: rgb(117, 4, 197);
+}
+.check a:hover {
+	color: rgb(160, 32, 250);
+	text-decoration: underline;
+}
+
+.submitbtn{
+	padding: 6px;
+	width: 85%;
+	border:  0.5px solid black;
+    margin-left: 25px;
+	border-radius: 10px;
+	background-color: #435ef4;
+	float: center;
+    margin-top: 10px;
+	font-size: 15px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.submitbtn:hover {
+	background-color: #173afc;
+}
+
+.error{
+	color: red;
+}
+

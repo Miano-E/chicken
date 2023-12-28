@@ -1,0 +1,380 @@
+html {
+    font-size: 72.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', san-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav{
+    margin: 4em;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+}
+
+nav ul li a{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+nav ul li a.active:before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid grey;
+    bottom: -6px;
+    transition: width .3s;
+}
+ 
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25em;
+}
+
+.logo1 {
+    width: 65px;
+    cursor: pointer;
+    transition: transform 1200ms; 
+}
+
+.logo {
+    margin: 0;
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: -1px;
+    
+}
+
+.logo span {
+    color: rgb(190, 3, 3);
+}
+
+/*Hero Section*/
+
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 8em;
+    margin-bottom: 10em;
+}
+
+.left-col {
+    width: 45%;
+}
+
+.left-col .down-arrow {
+    background-color: none;
+    position: absolute;
+    transition: transform 800ms;
+    width: 6.5em;
+    margin-top: 3em;
+	animation: moveArrow 2s alternate-reverse infinite;
+}
+
+.right-col {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    margin: 0;
+}
+
+.subhead {
+    font-size: 1.5rem;
+    
+}
+
+
+/*Right column*/
+
+.right-col {
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2,auto);
+    grid-template-areas: 
+    "left right"
+    "left bottom";
+    
+}
+
+.card {
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    margin-top: -.1em;
+    transition: transform 800ms;
+}
+
+.card1{
+    grid-area: left;
+    background-image: url(images/eggz.jpg);
+    height: 50vh;
+    
+}
+.card2{
+    background-image: url(images/hen-rooster-chicks.jpg);
+}
+.card3{
+    background-image: url(images/rooster.jpg);
+}
+
+/*Sections*/
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    
+    
+}
+
+
+.feature .chicken {
+    border-radius: .8em;
+    width: 40em;
+    z-index: 999;
+    transition: transform 800ms;
+	margin-bottom: .3em;
+}
+
+
+.feature.left .content {
+    text-align: left; /* Change text-align to left for content */
+    width: 30em;
+    grid-area: content;
+    margin-top: .3em;
+	margin-bottom: .3em;
+}
+
+.feature.left {
+    /* Add the following to change the order of items */
+    grid-template-areas:
+        "chicken content";
+}
+
+.feature.left .chicken {
+    grid-area: chicken;
+}
+
+
+h2 {
+    font-size: 2.6rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+/* Style for the table */
+
+
+.feature .Chicken {
+    width: 40em;  
+    border-radius: .8em;
+    transition: transform 800ms;
+	margin-top: .2em;
+}
+
+.feature.lefty .content {
+    width: 35em;
+    margin-bottom: 10em;
+	margin-top: .2em;
+}
+
+
+.feature .form_container {
+    border-radius: .8em;
+    width: 40em;
+    
+}
+
+
+.feature.flip .content {
+    text-align: left; /* Change text-align to left for content */
+    width: 30em;
+    grid-area: content;
+    margin-top: 13em;
+    
+}
+
+.feature.flip {
+    /* Change the order of items */
+    grid-template-areas:
+        "form_container content";
+}
+
+.feature.flip .form_container {
+    grid-area: form_container;
+}
+
+footer {
+   display: flex;
+   gap: 3em;
+}
+
+footer h3 {
+    font-weight: normal;
+    font-size: 2.2rem;
+} 
+
+
+.footer2 .copyright {
+   margin-left: 12em;
+   margin: 0 auto;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+
+
+.foot {
+    flex: 0;
+    text-align: right;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+} 
+.foot ul li {
+    
+    list-style: none;
+    display: inline-block;
+    gap: 3em;
+}
+
+.foot ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.941);
+    font-size: 1.2rem;
+    margin-left: 8em;
+    
+}
+
+.foot_content {
+    font-weight: normal;
+    font-size: 2.0rem;
+}
+
+/*Microintertactions*/
+
+nav ul li a:hover:before{
+    width: 45%;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.feature .chicken:hover {
+    transform: translateY(15px);
+}
+
+.feature .Chicken:hover {
+    transform: translateX(15px);
+}
+
+.logo1:hover {
+    transform: translateY(2px);
+}
+
+.logo:hover {
+    color: #686767;
+}
+
+.logo span:hover {
+    color: red
+}
+
+.foot ul li a:hover {
+    color: #787777;
+}
+
+.foot ul li a.active {
+    width: 50%;
+    text-decoration: underline;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    animation: reveal 2s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+main {
+    animation: growIn 4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+}
+
+@keyframes growIn {
+    from {
+        transform: scale(.4);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+

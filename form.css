@@ -1,0 +1,84 @@
+* {
+    font-family: 'Poppins';
+}
+
+h3{
+	text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+    margin: .5em;
+}
+
+.form_container{
+    font-family: 'Poppins';
+	font-size: 1.4rem;
+	max-width: 365px;
+	padding: 12px 16px;
+	margin-bottom: 3em;
+	background-color: #c6c9d1;
+	border-radius: 10px;
+	transition: transform 03s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	
+}
+
+form label{
+    font-weight: normal;
+    font-family: 'Poppins';
+	margin-top: 8px;
+	display: flex;
+}
+
+input[type="email"],
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+	margin: 8px 0;
+	font-size: 14px;
+	padding: 10px 10px;
+    border-radius: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+    border: 1px solid #000;  
+}
+
+.submit{
+	padding: 6px;
+	width: 85%;
+	border:  0.5px solid black;
+    margin-left: 25px;
+	border-radius: 10px;
+	background-color: #435ef4;
+	float: center;
+    margin-top: 8px;
+	font-size: 15px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.submit:hover {
+	background-color: #173afc;
+}
+
+.check{
+	margin-left: 55px;
+	color: #000;
+}
+
+.check a {
+	color: rgb(117, 4, 197);
+}
+.check a:hover {
+	color: rgb(160, 32, 250);
+	text-decoration: underline;
+}
+
+
+.error{
+	color: red;
+}
+
+
+.form_container:hover {
+	transform: translateX(-5px);
+}
