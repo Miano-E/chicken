@@ -106,8 +106,9 @@
 				}else {
 					echo "<script>alert('Failed')</script>";
 			 	}
+				 $stmt->close();
 			 }
-	   $stmt->close();
+	   
     }
 ?>
 
